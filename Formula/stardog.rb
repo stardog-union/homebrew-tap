@@ -9,7 +9,7 @@ class Stardog < Formula
   version "7.0.1"
   sha256 "96f5632186ce5d1ef7a6625966ac997349556b87a9ca03424eae352c098befc4"
 
-  depends_on :java => "8"
+  # depends_on :java => "8"
 
   def install
     prefix.install Dir["*"]
