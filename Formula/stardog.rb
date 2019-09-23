@@ -12,10 +12,12 @@ class Stardog < Formula
   # depends_on :java => "8"
 
   def install
-    prefix.install Dir["*"]
     man.mkpath
-    man1.install Dir["docs/man/man1"]
-    man8.install Dir["docs/man/man8"]
+    man.install Dir["docs/man/man1"]
+    man.install Dir["docs/man/man8"]
+    prefix.install Dir["client"], Dir["server"], Dir["helm"], Dir["docs"]
+    bin.install "bin/helpers.sh", "bin/stardog", "bin/stardog-admin"
+    lib.install "lib/libStarrocks.dylib", "lib/libvw_jni.dylib", "lib/libxgboost4j.dylib"
   end
 end
 
