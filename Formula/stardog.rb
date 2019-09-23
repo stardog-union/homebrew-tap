@@ -3,7 +3,7 @@
 # sales@stardog.com or visit http://stardog.com
 
 class Stardog < Formula
-  desc "It's Stardog"
+  desc "Stardog enterprise data unification platform"
   homepage "https://stardog.com"
   url "https://downloads.stardog.com/stardog/stardog-latest.zip"
   version "7.0.1"
@@ -15,9 +15,15 @@ class Stardog < Formula
     man.mkpath
     man.install Dir["docs/man/man1"]
     man.install Dir["docs/man/man8"]
-    prefix.install Dir["client"], Dir["server"], Dir["helm"], Dir["docs"]
+    prefix.install Dir["lib"], Dir["client"], Dir["server"], Dir["helm"], Dir["docs"]
     bin.install "bin/helpers.sh", "bin/stardog", "bin/stardog-admin"
-    lib.install "lib/libStarrocks.dylib", "lib/libvw_jni.dylib", "lib/libxgboost4j.dylib"
+
+    ohai "Stardog " + version + " installed to " + prefix
+  end
+
+  def post_install
+    # Remove unneeded symlink
+    system "rm", "/usr/local/bin/helpers.sh"
   end
 end
 
