@@ -6,8 +6,8 @@ class Stardog < Formula
   desc "Stardog enterprise data unification platform"
   homepage "https://stardog.com"
   url "https://downloads.stardog.com/stardog/stardog-latest.zip"
-  version "7.1.2"
-  sha256 "263d5387472f68b2629dc0fb7c1a1768fb447082e67f4016bbd61cc7b22213e7"
+  version "7.2.0"
+  sha256 "187b379a90d798ab45b165eced15e619877acd1d5b317db64a0e486b98bfb3fa"
 
   # depends_on :java => "8"
 
