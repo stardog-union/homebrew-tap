@@ -15,7 +15,7 @@ class Stardog < Formula
     man.mkpath
     man.install Dir["docs/man/man1"]
     man.install Dir["docs/man/man8"]
-    prefix.install Dir["lib"], Dir["client"], Dir["server"], Dir["helm"], Dir["docs"]
+    prefix.install Dir["lib"], Dir["client"], Dir["server"], Dir["docs"]
     bin.install "bin/helpers.sh", "bin/stardog", "bin/stardog-admin"
 
     ohai "Stardog " + version + " installed to " + prefix
