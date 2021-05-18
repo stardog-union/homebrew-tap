@@ -152,7 +152,10 @@ cask "stardog" do
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-zk-info.8"
 
   caveats do
-    depends_on_java "8 or 11"
+    depends_on_java [
+      "8",
+      "11",
+    ]
     "Visit https://docs.stardog.com/get-started/install-stardog/macOS-installation for further setup instructions"
   end
 end
