@@ -1,6 +1,6 @@
 cask "stardog" do
-  version "7.8.2"
-  sha256 "4e78ecc7d6a313080fb822f1c4d60f82cdec214fa34d93ab12611207f762b228"
+  version "7.8.3"
+  sha256 "278009000b74958d1c1f39653cf3c516b79676dcf6d6f7ca1d40d169c197ad5d"
 
   url "https://downloads.stardog.com/stardog/stardog-latest.zip"
   name "Stardog"
