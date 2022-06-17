@@ -39,7 +39,6 @@ cask "stardog" do
   manpage "stardog-#{version}/docs/man/man1/stardog-reasoning-consistency.1"
   manpage "stardog-#{version}/docs/man/man1/stardog-reasoning-explain.1"
   manpage "stardog-#{version}/docs/man/man1/stardog-reasoning-schema.1"
-  manpage "stardog-#{version}/docs/man/man1/stardog-reasoning-undo.1"
   manpage "stardog-#{version}/docs/man/man1/stardog-test-create.1"
   manpage "stardog-#{version}/docs/man/man1/stardog-test-run.1"
   manpage "stardog-#{version}/docs/man/man1/stardog-tx-begin.1"
