@@ -52,7 +52,6 @@ cask "stardog" do
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cache-status.8"
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cache-target.8"
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cluster-diagnostics-report.8"
-  manpage "stardog-#{version}/docs/man/man8/stardog-admin-cluster-generate.8"
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cluster-info.8"
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cluster-metrics.8"
   manpage "stardog-#{version}/docs/man/man8/stardog-admin-cluster-standby-join.8"
