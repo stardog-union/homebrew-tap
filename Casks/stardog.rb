@@ -1,6 +1,6 @@
 cask "stardog" do
-  version "12.1.3"
-  sha256 "a89215aa74477b42fc246372210289740cd7c47755b571d5fb33427451351ef8"
+  version "12.1.4"
+  sha256 "8f6f5d3df9669fabe4c63f571f4e288d6e00adf354a4febff016be795908d573"
 
   url "https://downloads.stardog.com/stardog/stardog-cli-latest.zip"
   name "Stardog"
